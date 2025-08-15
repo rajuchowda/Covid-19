@@ -1,0 +1,94 @@
+/* index.css for StateSpecific component */
+
+.state-specific-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.state-specific-container h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.state-specific-container p {
+  margin: 4px 0;
+}
+
+/* Bar Chart Styling */
+.bar-chart-container {
+  margin-bottom: 30px;
+}
+
+/* StateTotalData block */
+.ul-list-eachstate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  width: 23%;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+}
+
+.stats-title {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.stats-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.stats-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Line Charts Container */
+[data-testid='lineChartsContainer'] {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+[data-testid='lineChartsContainer'] h1 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Tested cases text */
+[data-testid='totalTestedCases'] {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .ul-list-eachstate {
+    flex-direction: column;
+  }
+
+  .category-item {
+    width: 100%;
+  }
+}

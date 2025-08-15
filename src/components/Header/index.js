@@ -10,13 +10,13 @@ class Header extends Component {
   }
 
   showDropDownMenu = () => (
-    <ul className='navBar'>
-      <Link to='/' className='link'>
-        <li className='item'>Home</li>
+    <ul className="navBar">
+      <Link to="/" className="link">
+        <li className="item">Home</li>
       </Link>
-      <li className='item'>Vaccination</li>
-      <Link to='/about' className='link'>
-        <li className='item'>About</li>
+      <li className="item">Vaccination</li>
+      <Link to="/about" className="link">
+        <li className="item">About</li>
       </Link>
     </ul>
   )
@@ -25,33 +25,33 @@ class Header extends Component {
     const {isToggleActive} = this.state
     return (
       <>
-        <div className='header-container'>
-          <Link to='/' className='link' aria-label='COVID19INDIA'>
-            <h1 className='logo'>COVID19INDIA</h1>
+        <div className="header-container">
+          <Link to="/" className="link" aria-label="COVID19INDIA">
+            <h1 className="logo">COVID19INDIA</h1>
           </Link>
-          <ul className='navBar'>
-            <Link to='/' className='link'>
-              <li className='item'>Home</li>
+          <ul className="navBar">
+            <Link to="/" className="link">
+              <li className="item">Home</li>
             </Link>
-            <li className='item'>Vaccination</li>
-            <Link to='/about' className='link'>
-              <li className='item'>About</li>
+            <li className="item">Vaccination</li>
+            <Link to="/about" className="link">
+              <li className="item">About</li>
             </Link>
           </ul>
         </div>
 
-        <div className='mobile-menu'>
-          <div className='mobile-header-container'>
-            <Link to='/' className='link'></Link>
+        <div className="mobile-menu">
+          <div className="mobile-header-container">
+            <Link to="/" className="link" />
             <button
-              type='button'
-              className='toggle-button'
+              type="button"
+              className="toggle-button"
               onClick={this.whenToggleButtonClick}
             >
-              <img src='/img/add-to-queue 1.png' alt='menu' />
+              <img src="/img/add-to-queue 1.png" alt="menu" />
             </button>
           </div>
-          <div className='menu'>
+          <div className="menu">
             {isToggleActive && this.showDropDownMenu()}
           </div>
         </div>
